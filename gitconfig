@@ -48,4 +48,9 @@
   mergeoptions = --no-edit
 [user]
 	email = gaving@live.com
-	name = Gavin Garza
+	name = gavingarza
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
